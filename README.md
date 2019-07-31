@@ -1,0 +1,2 @@
+# mysqli
+Is there a way to obtain only the affected columns after an update query? After an update query, that involves 10 columns, I know that only 2 columns are really updated (because the values of the other cols don't change). I need to know the names of the changed cols, for logging purpose.  $this->db->query("UPDATE table1 SET name = $name WHERE id=$id")->result(); $this->db->afffected_rows(); This code gives number of affected rows but i want the data and updated column information.
